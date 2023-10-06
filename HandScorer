@@ -10,7 +10,7 @@ public class HandScorer implements HandScorerInterface{
     //	Card card = card.remove(card.size()-1);
     	public boolean addCard(Card card) {
     		if (this.numCard == 10) {
-    			return data;
+    			return card;
     			
     	
     		}
@@ -21,10 +21,10 @@ public class HandScorer implements HandScorerInterface{
     	}
     	
     	return total;
-    	
-    	
+    
+    	}
     	while (hand.isEmpty()) {
-    		Card card = hand.pop();
+    		Card card = deck.pop();
     		String value = card.getValue();
     		
     	//computes values for ace for 10 vs 11 (1 v 10)	
